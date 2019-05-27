@@ -17,7 +17,7 @@ PROMPT_GEOMETRY_ENABLE_PLUGINS=${PROMPT_GEOMETRY_ENABLE_PLUGINS:-true}
 PROMPT_GEOMETRY_PRIMARY_SUFFIX=${PROMPT_GEOMETRY_PRIMARY_SUFFIX:-" "}
 
 prompt_geometry_render() {
-  PROMPT="$(geometry_plugin_render primary)$PROMPT_GEOMETRY_PRIMARY_SUFFIX"
+  PROMPT="%F{243}$(virtualenv_prompt_info)%{$reset_color%}%$(geometry_plugin_render primary)$PROMPT_GEOMETRY_PRIMARY_SUFFIX"
 
   PROMPT2=" $GEOMETRY_SYMBOL_RPROMPT "
 

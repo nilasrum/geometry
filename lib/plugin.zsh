@@ -20,7 +20,7 @@ typeset -gA GEOMETRY_PROMPT_PLUGINS
 if [[ $#GEOMETRY_PROMPT_PLUGINS_PRIMARY -gt 0 ]]; then
   GEOMETRY_PROMPT_PLUGINS[primary]=${(j/ /)GEOMETRY_PROMPT_PLUGINS_PRIMARY}
 else
-  GEOMETRY_PROMPT_PLUGINS[primary]='path hostname'
+  GEOMETRY_PROMPT_PLUGINS[primary]='virtualenv hostname path'
 fi
 
 # Default plugins for secondary ctx

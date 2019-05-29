@@ -1,8 +1,3 @@
--- delete afterwards---
-1. change geometry/libs/plugin.zsh (add virtualenv support)
-2. add new line at the begining of prompt in geometry.zsh-theme 
-3. modify color and design of venv name in geometry/plugins/virtualenv/pligin.zsh
-
 # geometry
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/geometry-zsh/Lobby)
